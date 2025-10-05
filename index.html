@@ -304,6 +304,7 @@
         function sendMessage() {
             const input = document.getElementById('user-input');
             const text = input.value.trim();
+            const chatLog = document.getElementById('chat-log'); // FIXED: Added this line
             
             if (text) {
                 addMessage('You', text);
